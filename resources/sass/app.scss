@@ -1,0 +1,68 @@
+@import 'sencha-touch/default/all';
+
+// You may remove any of the following modules that you
+// do not use in order to create a smaller css file.
+@include sencha-panel;
+@include sencha-buttons;
+@include sencha-sheet;
+@include sencha-picker;
+@include sencha-tabs;
+@include sencha-toolbar;
+@include sencha-toolbar-forms;
+@include sencha-indexbar;
+@include sencha-list;
+@include sencha-layout;
+@include sencha-carousel;
+@include sencha-form;
+@include sencha-msgbox;
+
+// Your custom code goes here...
+@include sencha-list-paging;
+.bar_detail {
+    padding: 10px;
+    .bar_name {
+        @include background-image(linear-gradient(top, #ffd, #eec));
+        @include border-radius(4px);
+        border: solid 1px #aaa;
+        font-size: 20px;
+        padding: 4px;
+    }
+    .bar_address {
+        font-size: 14px;
+        padding: 10px;
+        @include border-radius(4px);
+        background-color: #ffeecc;
+        margin: 10px 0 10px 0;
+        @include box-shadow(#999 2px 2px);
+
+    }
+    table {
+        @include border-radius(4px);
+        width: 100%;
+        font-size: 14px;
+        col .bar_cap {
+            width: 80px;
+        }
+        .bar_cap {
+            width: 80px;
+            font-weight: 700;
+            padding: 4px;
+            border: 1px solid #fff;
+            background-color: #ffeecc
+        }
+        .bar_value {
+            padding: 4px;
+            border: 1px solid #fff;
+            background-color: #fff3db;
+        }
+    }
+    .bar_image {
+        text-align: center;
+
+        margin: 10px 0 0 0;
+        img {
+            margin: 3px;
+        }
+    }
+}
+
